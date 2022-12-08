@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace YValiya\Core\Service;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
