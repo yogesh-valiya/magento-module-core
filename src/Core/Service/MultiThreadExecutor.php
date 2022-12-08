@@ -1,10 +1,11 @@
-<?php /** @noinspection ALL */
+<?php
+
+/** @noinspection ALL */
 
 declare(strict_types=1);
 
 namespace YValiya\Core\Service;
 
-use Encora\Base\Model\Logger;
 use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\Exception\LocalizedException;
 use Throwable;
@@ -13,9 +14,6 @@ use Zend_Log;
 
 class MultiThreadExecutor implements MultiThreadExecutorService
 {
-    const DEFAULT_THREAD_COUNT = 8;
-    const ERROR_LOG_FILE_NAME = 'multi_threading.log';
-
     private bool $failInChildProcess = false;
     private ResourceConnection $resource;
     private ?int $threadsCount;
@@ -112,6 +110,6 @@ class MultiThreadExecutor implements MultiThreadExecutorService
 
     private function logger(): Zend_Log
     {
-        return Logger::get(self::ERROR_LOG_FILE_NAME);
+        return \YValiya\Core\Service\LoggerFactory::create()->get(self::ERROR_LOG_FILE_NAME);
     }
 }

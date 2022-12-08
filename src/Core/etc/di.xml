@@ -4,4 +4,6 @@
     <preference for="YValiya\Core\Api\FilesTrackerService" type="YValiya\Core\Service\FilesTracker"/>
     <preference for="YValiya\Core\Api\LoggerService" type="YValiya\Core\Service\Logger"/>
     <preference for="YValiya\Core\Api\MultiThreadExecutorService" type="YValiya\Core\Service\MultiThreadExecutor"/>
+    <preference for="YValiya\Core\Api\LockProtectedCallbackExecutorService"
+                type="YValiya\Core\Service\LockProtectedCallbackExecutor"/>
 </config>
