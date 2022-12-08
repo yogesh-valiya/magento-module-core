@@ -1,0 +1,24 @@
+{
+    "name": "yogesh-valiya/magento-module-core",
+    "description": "Core module for other Magento 2 modules",
+    "authors": [
+        {
+            "name": "Yogesh Valiya",
+            "email": "yvaliya4@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1|^8.0",
+        "magento/framework": "102.0.*|103.0.*"
+    },
+    "type": "magento2-module",
+    "version": "0.0.1",
+    "autoload": {
+        "files": [
+            "src/Core/registration.php"
+        ],
+        "psr-4": {
+            "YValiya\\Core\\": "src/Core"
+        }
+    }
+}
