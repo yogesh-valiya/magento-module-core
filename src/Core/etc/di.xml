@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="YValiya\Core\Api\FilesTrackerService" type="YValiya\Core\Service\FilesTracker"/>
+    <preference for="YValiya\Core\Api\LoggerService" type="YValiya\Core\Service\Logger"/>
+</config>
